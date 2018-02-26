@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,5 +36,56 @@
     </div>
   </nav>
 
+<!-----------------------top----------------------------->
+<div class="continer-fluid full-width">
+  <h1 style="color: white;">. </h1>
+  <div class="col-xs-12">
+    <h1 id="top">
+      Leadership in an Age of Automation and Income Inequality
+    </h1>
+    <p>Welcome to the final projects of Leadership in an Age of Automation and Income Inequality, taught by Joe Mellin at Grinnell College in February 2018.</p>
+  </div>
+</div>
+
+<!-----------------------photos----------------------------->
+<div class="continer-fluid full-width">
+  <div class="col-xs-12">
+    <h2 id="photoessay">
+    Photo Essay</h2>
+    <p>Nina Galanter</p>
+  </div> <!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self-->
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="photos/ngpic_1.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_2.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_3.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_4.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_5.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_6.jpg" style="width:100%">
+    <img class="mySlides" src="photos/ngpic_7.jpg" style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+</div>
 
 </body>
